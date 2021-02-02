@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB30AD1125C982EA00BD843E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB30AD1025C982EA00BD843E /* StoreKit.framework */; };
+		AB30AD1725C9883600BD843E /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30AD1625C9883600BD843E /* IAPProduct.swift */; };
+		AB30AD1B25C988C900BD843E /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30AD1A25C988C900BD843E /* IAPService.swift */; };
 		ABD882E825C97F8D008A4E4F /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD882E725C97F8D008A4E4F /* PurchaseCell.swift */; };
 		DABDE1C025C97A18003AABDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDE1BF25C97A18003AABDC /* AppDelegate.swift */; };
 		DABDE1C225C97A18003AABDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDE1C125C97A18003AABDC /* SceneDelegate.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		AB30AD1025C982EA00BD843E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AB30AD1625C9883600BD843E /* IAPProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProduct.swift; sourceTree = "<group>"; };
+		AB30AD1A25C988C900BD843E /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
 		ABD882E725C97F8D008A4E4F /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		DABDE1BC25C97A18003AABDC /* Shiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDE1BF25C97A18003AABDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				DABDE1CA25C97A1C003AABDC /* LaunchScreen.storyboard */,
 				DABDE1CD25C97A1C003AABDC /* Info.plist */,
 				ABD882E725C97F8D008A4E4F /* PurchaseCell.swift */,
+				AB30AD1625C9883600BD843E /* IAPProduct.swift */,
+				AB30AD1A25C988C900BD843E /* IAPService.swift */,
 			);
 			path = Shiny;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB30AD1725C9883600BD843E /* IAPProduct.swift in Sources */,
 				ABD882E825C97F8D008A4E4F /* PurchaseCell.swift in Sources */,
+				AB30AD1B25C988C900BD843E /* IAPService.swift in Sources */,
 				DABDE1C425C97A18003AABDC /* ViewController.swift in Sources */,
 				DABDE1C025C97A18003AABDC /* AppDelegate.swift in Sources */,
 				DABDE1C225C97A18003AABDC /* SceneDelegate.swift in Sources */,
@@ -302,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				INFOPLIST_FILE = Shiny/Info.plist;
@@ -309,8 +318,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PG.Shiny;
+				PRODUCT_BUNDLE_IDENTIFIER = se.shiny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				INFOPLIST_FILE = Shiny/Info.plist;
@@ -328,8 +339,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PG.Shiny;
+				PRODUCT_BUNDLE_IDENTIFIER = se.shiny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class ViewController: UIViewController, UITableViewDelegate {
     
